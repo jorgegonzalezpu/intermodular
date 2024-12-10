@@ -1,0 +1,209 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+/* Estilos globales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Fondo claro */
+  color: #333; /* Texto oscuro */
+}
+
+h1, h2, h3 {
+  color: #2c3e50; /* Azul oscuro */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Barra de navegación fija */
+nav {
+  position: fixed; /* Fijar en la parte superior */
+  top: 0; /* Alinearlo al borde superior */
+  left: 0;
+  width: 100%; /* Hacerlo ocupar todo el ancho */
+  background-color: #34495e; /* Azul grisáceo */
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 1000; /* Asegurar que esté sobre otros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para separarlo del contenido */
+}
+
+nav a {
+  color: #ecf0f1; /* Blanco */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #2c3e50; /* Azul oscuro */
+}
+
+main {
+  padding: 2rem;
+  padding-top: 6rem; /* Añadir espacio superior para compensar el nav fijo */
+}
+
+/* Botones */
+button {
+  background-color: #3498db; /* Azul brillante */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9; /* Azul más oscuro */
+}
+
+button:active {
+  transform: scale(0.97); /* Efecto de clic */
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: #2980b9;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #2980b9; /* Azul brillante */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ecf0f1;
+  transition: background-color 0.3s;
+}
+
+/* Formularios */
+input[type="text"], input[type="number"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+/* Espaciado entre los elementos de la lista de productos */
+ul.product-list {
+  list-style-type: none; /* Quitar los puntos de la lista */
+  padding: 0;
+}
+
+ul.product-list li {
+  margin-bottom: 1rem; /* Espacio entre los elementos */
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9; /* Fondo claro para diferenciar */
+}
+
+ul.product-list li:hover {
+  background-color: #eef2f7; /* Fondo más claro al pasar el ratón */
+  transition: background-color 0.3s;
+}
